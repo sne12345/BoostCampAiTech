@@ -63,11 +63,11 @@ ex) Locally connected layer
 ## 3.1 CNN의 역사
 ![image](https://user-images.githubusercontent.com/51853700/132171185-444c3443-9912-4d20-ad57-b0ebf10debb1.png)
 
-#### LeNet
+### LeNet
 : 한 글자 단위로 인식, 우편물
 ![image](https://user-images.githubusercontent.com/51853700/132171140-dd153d90-d2c4-4450-a9b2-6bc127435435.png)
 
-#### AlexNet
+### AlexNet
 : 더 깊은 모델 => gpu 메모리가 모자라서 두 개로 나누어서 두 개의 gpu로 돌림
 ![image](https://user-images.githubusercontent.com/51853700/132171522-c6dfd34d-46bf-4f63-a698-867f468229a2.png)
 
@@ -82,7 +82,7 @@ ex) Locally connected layer
 : 각 element에 영향을 미치는 입력 픽셀의 영역
 
 
-#### VGGNet
+### VGGNet
 : Deeper but Simple architecture + only 3x3 and 2x2 max pooling. 
 : 일반화가 잘 됨
 ![image](https://user-images.githubusercontent.com/51853700/132172590-6258835d-0d2c-42c6-b4b3-6d175a6182ad.png)
