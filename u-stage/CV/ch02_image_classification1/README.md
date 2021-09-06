@@ -34,7 +34,7 @@
 ## 1.3 어떤 것을 배울것인가?
 -  Fundamental Image Tasks
 -  Data Augmentation and knoledge distillation
--  Multi-modeling ( vision + {text,sound,etc} )
+-  Multi-modaling ( vision + {text,sound,etc} )
 -  Conditional Generative model
 -  visualization tools
 
