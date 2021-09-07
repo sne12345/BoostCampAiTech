@@ -2,6 +2,36 @@
 - 샘플 데이터와 실제 데이터의 차이를 줄여주기 위한 노력  
 - 샘플 데이터에는 bias가 있을 수 있음  
 - 이미지를 돌리거나 색을 바꾸는 등의 기법을 통해 train 데이터에서 미처 커버하지 못한 데이터를 만들어 준다.
+- Crop, Shear, Brightness, Perspective, Rotate
+- by openCV, numpy
+
+#### 1) Brightness Adjustment
+![image](https://user-images.githubusercontent.com/51853700/132299654-87f64d2b-3834-420c-88da-e0c45ad645b3.png)
+
+#### 2) Rotate
+![image](https://user-images.githubusercontent.com/51853700/132299716-c16efd38-b6c4-4505-9d2d-a3239a7e267e.png)
+
+#### 3) Crop
+![image](https://user-images.githubusercontent.com/51853700/132299782-36c563c7-cf66-4b42-b431-07f55471c135.png)
+
+#### 4) Affine Transform
+: line ratio 유지하면서 이미지 비틂 => 세 점을 찍어서 이동시키는 방식으로 구현
+![image](https://user-images.githubusercontent.com/51853700/132299953-b33e0e60-8896-4f61-ac07-b7360d29aace.png)
+
+#### 5) CutMix
+: 영상의 일부를 잘라서 다른 영상과 합성 
+* 라벨도 합성
+![image](https://user-images.githubusercontent.com/51853700/132300056-ff196249-9628-4361-8bf2-3c1d434d04a3.png)
+
+#### 6) RandAugment
+: 여러가지 가능한 augmentation을 랜덤으로 조합시켜서 가장 성능이 좋은 것을 가져다 씀
+* 어떤 augmentation?
+* 얼마나 세게?
+
+=> n 개의 augmentation을 random sampling
+
+
+
 
 
 ## Leveraging pre-trained information
