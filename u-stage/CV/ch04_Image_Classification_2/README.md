@@ -7,15 +7,18 @@
 [ 문제 발생 ]
 #### Gradient vanishing / exploding 
 #### Computationally complex
-#### Degradatio nproblem
-
+#### Degradatio nproblem  
+  
+    
+    
+## CNN architectures for image classification 2
 
 #### 2. GoogleNet
 * Inception Module 구조
 하나의 layer에서 다양한 크기의 convolution filter 사용 => 여러 측면으로 activation 관찰
 => 수평 확장
 
-![image](https://user-images.githubusercontent.com/51853700/132457574-40695e5d-556c-4c4f-888d-3c560e49c458.png)
+![image](https://user-images.githubusercontent.com/51853700/132457574-40695e5d-556c-4c4f-888d-3c560e49c458.png)  
 => 계산 복잡도와 용량 커짐 => 1x1 convolution 적용함으로써 해결(bottleneck layer?)
 
 * 1x1 convolution 
