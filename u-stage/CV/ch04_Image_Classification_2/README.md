@@ -7,7 +7,6 @@
 [ 문제 발생 ]
 #### Gradient vanishing / exploding 
 #### Computationally complex
-#### Degradatio nproblem  
   
     
     
