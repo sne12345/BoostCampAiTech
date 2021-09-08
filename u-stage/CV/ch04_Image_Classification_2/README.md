@@ -68,7 +68,7 @@ attention 생성하는 방법(뉴에이팅?, gating?)
 scaling을 통해 중요한 것은 강조, 중요하지 않은 것은 값을 줄임
 
 
-* EfficientNet
+* EfficientNet 
 : deeper, wider, high resolution networks(인풋 resolution?을 크게 넣어줌)  => compound scaling 
 (saturation? 포화)
 적은 FLOPS?에서도 좋은 성능
@@ -81,6 +81,18 @@ scaling을 통해 중요한 것은 강조, 중요하지 않은 것은 값을 줄
 : offset field에 따라 feature map을 irregular하게 넓혀줌
 
 ![image](https://user-images.githubusercontent.com/51853700/132463154-5f723349-b2b6-44d0-8ce8-6a27c17730e6.png)
+
+
+
+## Summary of image classification
+operations : coputational compelxity, 원의 크기 : memory size
+![image](https://user-images.githubusercontent.com/51853700/132463393-fc64bbc3-9555-4cb2-b245-31488d2721ac.png)
+
+* GoogleNet is the most efficient CNN model out of AlexNet, VGG, REsNet
+* but, 구현 힘듦
+* 일반적으로 많이 사용하는 backbone은 VGG, ResNet
+
+feature map을 추출하는데 CNN 사용하고, classification할 때 다양한 target task에 응용
 
 
 
