@@ -108,7 +108,21 @@ FCN을 base로 함
 ![image](https://user-images.githubusercontent.com/51853700/132635508-e5ec3c52-356f-4aa8-93ee-e48d37073308.png)
 물체의 안쪽과 바깥쪽으로 score map이 확산하게 만듦 
 
-#### 2) Atrous Convolution(Dilated convolution)
+#### 2) Dilated convolution
 convolution할 때에 일정한 공간을 넣어줌  
 넓은 영역 고려할 수 있게 함 + 파라미터 수 늘어나지 않음
-=> receptive field size가 크게 늚 ??
+=> receptive field size가 크게 늚
+![image](https://user-images.githubusercontent.com/51853700/132636148-4f828421-56cb-43e3-974d-551e79dac179.png)
+
+
+
+#### Atrous Convolution
+Dilated convolution + depthwise separable convolution
+![image](https://user-images.githubusercontent.com/51853700/132636406-30bc2cc4-c752-4777-bf3c-de0a64faf3d1.png)
+=> 효율적임
+
+* convolution 계산 수식??
+
+
+#### DeepLab 전체 구조
+![image](https://user-images.githubusercontent.com/51853700/132636620-c5e8966a-f174-47e0-8783-489e11d4838d.png)
