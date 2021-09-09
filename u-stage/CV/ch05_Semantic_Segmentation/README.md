@@ -79,4 +79,36 @@ FCN과 비슷하지만, end-to-end가 아님
 
 
 ## U-Net
-FCN을 base
+FCN을 base로 함
+
+![image](https://user-images.githubusercontent.com/51853700/132632110-b056433b-e145-4451-8062-ff3b4804905f.png)
+
+* contract path
+: feature channel을 두 배씩 늘리면서 receptive field 키워줌
+
+* expanding path
+: contracth path layer와 대칭되게 동일하게 맞춤
+: 해상도를 높이면서 contract path에서 대칭되는 특징을 skip connection으로 가지고 옴(concatenate 사용?) => localized 정보 제공
+: feature channel을 두 배씩 줄면서 해상도를 늘림
+
+
+#### 만약 feature map size가 홀수가 되면 어떡하지?
+![image](https://user-images.githubusercontent.com/51853700/132634010-4fa58f31-9067-4734-a488-2c89395fb782.png)
+=> 홀수가 나오지 않도록 해야 함
+
+
+#### U-net in pytorch
+![image](https://user-images.githubusercontent.com/51853700/132634109-1c60778a-8911-4f88-b85e-b323b444b18e.png)
+![image](https://user-images.githubusercontent.com/51853700/132634273-fb16d8bd-e560-4899-a15a-ce71ff3697f0.png)
+=> 중첩이 안 생김
+
+
+## DeepLab
+#### 1) CRF
+![image](https://user-images.githubusercontent.com/51853700/132635508-e5ec3c52-356f-4aa8-93ee-e48d37073308.png)
+물체의 안쪽과 바깥쪽으로 score map이 확산하게 만듦 
+
+#### 2) Atrous Convolution(Dilated convolution)
+convolution할 때에 일정한 공간을 넣어줌  
+넓은 영역 고려할 수 있게 함 + 파라미터 수 늘어나지 않음
+=> receptive field size가 크게 늚 ??
