@@ -41,7 +41,7 @@ sliding window는 사진을 윈도 사이즈에 맞춰 나눈 다음 매 윈도�
 
 
 ### Upsampling Layer  
-stride와 pooling layer는 receptive field를 키워주지만, 해상도는 낮춤 => trade off
+stride와 pooling layer는 receptive field를 키워주지만, 해상도(resolution)는 낮춤 => trade off
 => receptive field를 키워주고, 마지막에 upsampling해줌
 ![image](https://user-images.githubusercontent.com/51853700/132630550-d46c8a14-093f-4c73-af5d-4f355a4463d0.png)
 
