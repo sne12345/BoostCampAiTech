@@ -58,6 +58,14 @@ layer depth가 성능에 큰 영향이 있다 !
 ![image](https://user-images.githubusercontent.com/51853700/132461162-b88bcb65-8e48-4089-9717-6fe516042425.png)
 채널은 높아지는 동시에, 공간축은 두 배씩 작아진다.
 
+
+* Variance 관점
+
+Xavier는 Tanh activation (zero mean) 일 때, in out의 variance가 동일 할 수 있도록 유도
+He는 ReLU (non zero mean) 일 때, in out의 variance가 동일 할 수 있도록 유도
+![image](https://user-images.githubusercontent.com/51853700/132810303-1cdfbfe1-7038-43e4-9b52-d0b7bd0c3f4e.png)
+
+
 * Dense Net
 : 모든 이전 layer들의 gradient 값을 앞으로 전달
 : 더하기가 아닌 concatenate(기존 layer의 값을 그대로 보존)
