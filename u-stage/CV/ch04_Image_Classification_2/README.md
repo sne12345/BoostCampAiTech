@@ -59,10 +59,6 @@ layer depth가 성능에 큰 영향이 있다 !
 채널은 높아지는 동시에, 공간축은 두 배씩 작아진다.
 
 
-* Variance 관점
-
-Xavier는 Tanh activation (zero mean) 일 때, in out의 variance가 동일 할 수 있도록 유도
-He는 ReLU (non zero mean) 일 때, in out의 variance가 동일 할 수 있도록 유도
 ![image](https://user-images.githubusercontent.com/51853700/132810303-1cdfbfe1-7038-43e4-9b52-d0b7bd0c3f4e.png)
 
 
