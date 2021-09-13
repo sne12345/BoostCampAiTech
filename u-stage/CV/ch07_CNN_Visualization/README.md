@@ -61,7 +61,7 @@ Feature space
 3) activation map 중에서 가장 큰 값 근방의 패치를 뜯어옴 
 
 
-#### 3. activation investigation - 이미지 합성 
+#### 3. activation investigation - 이미지 합성
 
 * Gradient ascent
 ![image](https://user-images.githubusercontent.com/51853700/133033503-930c2ea0-6544-480d-9428-93280416c909.png)
@@ -69,3 +69,24 @@ I : 영상 입력값
 
 ![image](https://user-images.githubusercontent.com/51853700/133033636-a87be7fe-425b-47f6-bb6a-81dd9a33a978.png)
 L2
+
+1) 랜덤한 입력 이미지에 대한 prediction score를 구함
+2) backpropagation
+3) 입력 데이터를 업데이트 
+
+
+
+## model decision explanation
+
+#### saliency test 1 : occlusion map
+: mask 위치에 따른 score change를 분석 
+![image](https://user-images.githubusercontent.com/51853700/133035260-083eb09b-29a4-404e-a0e5-0d174da1c4a0.png)
+
+
+#### saliency test 2 : via Backpropagation
+: 랜덤 x 특정 이미지를 입력값으로 넣고, backpropation을 해서 가장 영향을 많이 미치는 영역 히트맵으로 그려줌 
+![image](https://user-images.githubusercontent.com/51853700/133035990-722db7db-8369-42b6-90b4-ee1030631b4a.png)
+
+1) 특정 이미지를 입력값으로 넣어서 class score 를 구함
+2) input domain까지 backpropagation
+3) visualize the obtained gradient magnitude map
