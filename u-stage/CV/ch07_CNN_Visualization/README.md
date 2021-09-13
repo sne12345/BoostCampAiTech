@@ -40,17 +40,17 @@ Feature space
 #### 2. embedding feature analysis
 차원축소 방법을 통해 눈으로 쉽게 확인하기  
 
-## t-SNE ?
+* t-SNE ?
 ![image](https://user-images.githubusercontent.com/51853700/133031865-7856ac92-7f90-4522-a4ae-727aca362b45.png)
 
 
-## Layer activation 
+* Layer activation 
 : thresholding ?
 : middle layer to high layer
 ![image](https://user-images.githubusercontent.com/51853700/133032008-06f068a2-a0d6-406d-a261-2acba7c8778d.png)
 
 
-## Maximally activating patches
+* Maximally activating patches
 : hidden layer에서 가장 큰 값을 갖는 위치 근방의 패치를 가져옴 
 : middle layer
 ![image](https://user-images.githubusercontent.com/51853700/133032252-3de6ae0a-c775-4711-a1c9-d862e8cc1510.png)
@@ -90,3 +90,49 @@ L2
 1) 특정 이미지를 입력값으로 넣어서 class score 를 구함
 2) input domain까지 backpropagation
 3) visualize the obtained gradient magnitude map
+
+
+#### advanced saliency
+:backward 연산을 할 때 activation (relu)를 적용 
+![image](https://user-images.githubusercontent.com/51853700/133037468-43935113-aac1-4aa9-9ff3-ace90a38d077.png)
+
+
+#### guided saliency
+: forward 연산할 때에도 activation 적용 , backward 연산을 할 때도 activation 를 적용 
+=> 양방향에서 모두 양수를 참조하는 방향으로 가기 때문
+![image](https://user-images.githubusercontent.com/51853700/133037842-911b2c93-8683-4459-bd65-b97b6dd70e34.png)
+
+
+#### CAM(Class activating map)
+: global average pooling을 넣어주고, fc layer를 하나만
+![image](https://user-images.githubusercontent.com/51853700/133038163-4e9f88ec-79bc-4b55-846a-8c60102b3b00.png)
+
+
+[ 수식 ]
+![image](https://user-images.githubusercontent.com/51853700/133038520-f291e8f8-b7cc-4ef5-8edc-1c30f27c8cdb.png)
+![image](https://user-images.githubusercontent.com/51853700/133038630-12ad66ff-1c44-4d12-bf79-164ec27cd303.png)
+
+
+* 위치도 찾아짐
+![image](https://user-images.githubusercontent.com/51853700/133038708-28f51570-bb74-4948-bcbb-59b6c79619cd.png)
+* but, 구조를 바꾸기 때문에 성능이 떨어질 수 있음 (ResNet, googleNet에서는 GAP들어가 있어서 성능 차이가 크지 않음)
+
+
+#### Grad-CAM
+: 기존 pretrained model 구조를 바꾸지 않고도 적용가능, CNN 필요 
+![image](https://user-images.githubusercontent.com/51853700/133039007-eb5cd072-eb45-44e1-a460-334764db5cfc.png)
+
+
+1) 각 채널의 gradient 성분의 크기 구함(weight) 
+![image](https://user-images.githubusercontent.com/51853700/133039316-58e1bea1-4ed5-4657-b087-7967eb5da8b6.png)
+
+2) CAM과 다르게 activation은 ReLU 사용 
+![image](https://user-images.githubusercontent.com/51853700/133039227-2400e6e7-37dd-4627-a486-46e2bd4b575d.png)
+
+
+
+
+* Grad-CAM은 여러가지 task 에 사용가능 
+![image](https://user-images.githubusercontent.com/51853700/133039491-57251e41-58f0-46c6-8f24-f11d76f391af.png)
+
+
