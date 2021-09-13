@@ -12,5 +12,11 @@
 
 ## 2. filter visualization
 : color, 모양을 학습한 각각의 pixel을 확인할 수 있음 
+: 3채널 이상은 분석하기가 쉽지 않음, 추상적임 => 더 복잡한 방법 필요 
 ![image](https://user-images.githubusercontent.com/51853700/133021856-a39952e6-0e39-4f88-a1b2-d168f558f77e.png)
+
+
+
+## 3. Types of visualizing neural network
+![image](https://user-images.githubusercontent.com/51853700/133030674-345763aa-6c27-4bf1-bce2-ee67787db2dc.png)
 
