@@ -89,6 +89,9 @@ L2
 2) input domain까지 backpropagation
 3) visualize the obtained gradient magnitude map
 
+=> Gradient ascent는 class 에 대한 정보에 초점 (focus on model)
+=> via Backpropagation은 focus on data ??
+
 
 #### advanced saliency
 :backward 연산을 할 때 activation (relu)를 적용 
