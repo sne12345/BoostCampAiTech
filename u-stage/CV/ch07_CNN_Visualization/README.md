@@ -35,14 +35,14 @@ Nearest neighbors in Feature space
 Feature space
 ![image](https://user-images.githubusercontent.com/51853700/133031680-bcf23bbe-a343-4244-93ed-323721d724ef.png)
 
-
-
-#### 2. embedding feature analysis
-차원축소 방법을 통해 눈으로 쉽게 확인하기  
+  
 
 * t-SNE ?
+: 차원축소 방법을 통해 눈으로 쉽게 확인하기
 ![image](https://user-images.githubusercontent.com/51853700/133031865-7856ac92-7f90-4522-a4ae-727aca362b45.png)
 
+
+#### 2. activation investigation
 
 * Layer activation 
 : thresholding ?
@@ -60,8 +60,6 @@ Feature space
 2) 예제 데이터를 넣어서, 각 layer의 channel의 activation map을 저장
 3) activation map 중에서 가장 큰 값 근방의 패치를 뜯어옴 
 
-
-#### 3. activation investigation - 이미지 합성
 
 * Gradient ascent
 ![image](https://user-images.githubusercontent.com/51853700/133033503-930c2ea0-6544-480d-9428-93280416c909.png)
