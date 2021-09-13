@@ -45,10 +45,27 @@ Feature space
 
 
 ## Layer activation 
+: thresholding ?
 : middle layer to high layer
 ![image](https://user-images.githubusercontent.com/51853700/133032008-06f068a2-a0d6-406d-a261-2acba7c8778d.png)
 
 
 ## Maximally activating patches
-: hidden layer에서 가장 큰 값을 갖는 위치 근방의 패치?를 가져옴 
+: hidden layer에서 가장 큰 값을 갖는 위치 근방의 패치를 가져옴 
+: middle layer
 ![image](https://user-images.githubusercontent.com/51853700/133032252-3de6ae0a-c775-4711-a1c9-d862e8cc1510.png)
+
+
+1) 특정 channel을 고르기 
+2) 예제 데이터를 넣어서, 각 layer의 channel의 activation map을 저장
+3) activation map 중에서 가장 큰 값 근방의 패치를 뜯어옴 
+
+
+#### 3. activation investigation - 이미지 합성 
+
+* Gradient ascent
+![image](https://user-images.githubusercontent.com/51853700/133033503-930c2ea0-6544-480d-9428-93280416c909.png)
+I : 영상 입력값 
+
+![image](https://user-images.githubusercontent.com/51853700/133033636-a87be7fe-425b-47f6-bb6a-81dd9a33a978.png)
+L2
