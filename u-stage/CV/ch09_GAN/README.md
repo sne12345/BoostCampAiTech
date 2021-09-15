@@ -1,6 +1,7 @@
-## Conditional generatvie model
+## 이미지 Notion 참조
 
-#### 1.1 Conditional generatvie model
+#### https://harmonious-collar-f7c.notion.site/ch09_GAN-751b623055164b6bbbe99f7deae20657
+
 
 # ch09_GAN
 
