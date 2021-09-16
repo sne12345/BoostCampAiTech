@@ -121,3 +121,13 @@ localization score를 weight로 visual net에서 나온 feature와 weighted sum 
 
 
 ![image](https://user-images.githubusercontent.com/51853700/133564450-e29b4238-b937-4072-a327-2133d67e7435.png)
+
+
+
+* visual 정보를 이용해서 speech separate
+* ![image](https://user-images.githubusercontent.com/51853700/133565811-52118768-ba11-4eba-a7ae-3b5c2b33d526.png)
+
+face embedding -> STFT(spectogram) -> 얼굴과 스피치 데이터를 concat, complex mask 형태로 출력 -> seperated speech spectogram 분리 -> waveform으로 구성
+=> L2 loss (clean spectogram과 enhanced spectrogram 의 차이) but 분리가 불가능 -> GT를 만들때에는 두 개의 video를 합성
+
+* synthesizing obama
