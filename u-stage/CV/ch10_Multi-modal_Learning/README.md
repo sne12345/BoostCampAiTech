@@ -47,4 +47,24 @@ question stream : RNN으로 encoding -> fixed dimensional vector 출력
 ![image](https://user-images.githubusercontent.com/51853700/133558931-781731b7-918f-46fc-b073-a9e0d8d13b0e.png)
 
 
-## 3. Multi-modal task (2)
+## 3. Multi-modal task (2) visual & audio
+
+* sound representation
+![image](https://user-images.githubusercontent.com/51853700/133559384-223193c1-9095-4a3c-9f30-4c931621f77c.png)
+
+fourier transform : 음향 -> 주파수로 변환
+* STFT(Short time Fourier transform)
+: 짧은 구간에 대해서만 fourier transform을 적용함
+hamming wave : 끝은 줄어주고, 가운데 부분에 초점을 맞출 수 있도록 
+window를 적당히 overlap
+![image](https://user-images.githubusercontent.com/51853700/133560654-e8c8c5fd-43e6-482b-a633-0c5d9d0e7513.png)
+
+
+* fourier transform을 왜 하느냐?
+: 어떤 주파수 성분이 들어있는지 분해 decompose
+![image](https://user-images.githubusercontent.com/51853700/133560881-4b4f25fc-4fe4-4c16-aa93-8892a97469df.png)
+
+* Spctrogram
+: 시간에 따른 주파수 변화
+![image](https://user-images.githubusercontent.com/51853700/133561114-d5b77445-ea9d-4dae-86ed-6b3312fcf3b3.png)
+
