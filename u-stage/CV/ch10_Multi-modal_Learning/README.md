@@ -1,3 +1,7 @@
+
+![image](https://user-images.githubusercontent.com/51853700/133568611-808b95d8-7976-4518-94c4-7cdc1d2ca061.png)
+
+
 ## 1. Overview of Multi-modal Learning
 서로 다른 데이터 형태를 사용하는 학습법 
 ![image](https://user-images.githubusercontent.com/51853700/133548786-4c2d03e3-8f54-4090-af7d-fbae95f2ad08.png)
@@ -19,13 +23,16 @@
 ### * Multi-modal Learning의 패턴
 ![image](https://user-images.githubusercontent.com/51853700/133549166-ceb30071-9e0e-43f7-95aa-e48b867f80bb.png)
 
+1) joint embedding : matching
+2) translation : translating
+3) reasoning : referencing
 
 
 
 ## 2. Multi-modal task (1) visual & text
 
 안돼애애애애ㅠㅠㅠ
-
+## 2.1 
 
 
 ### 2.3 cross modal translation
