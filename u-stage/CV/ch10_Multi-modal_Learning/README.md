@@ -79,3 +79,17 @@ sound 쪽만 학습되고, visual 쪽은 fix되어 있음
 ![image](https://user-images.githubusercontent.com/51853700/133562811-699fd82b-f1ba-4b45-a827-1cbf07ada453.png)
 
 * waveform : spectrogram을 안씀, 특별한 사유 x
+
+* 다른 target task를 할 때에는 pool5의 feature를 추출해서 사용(sound를 학습한 데이터이다) -> classifier -> target task 풀기
+=> pool5가 더 generalized 한 sementic 정보를 가지고 있을 것이라 판단
+
+3.3 cross modal translation
+
+* Speech2Face
+![image](https://user-images.githubusercontent.com/51853700/133563471-5597bbb2-fb05-4813-9156-91ea88bb2876.png)
+
+=> Module network
+: 미리 학습된 모델들을 잘 조합해서 사용 
+![image](https://user-images.githubusercontent.com/51853700/133563558-d19d318c-a5fc-4f1a-b929-91783fcba3b1.png)
+
+
