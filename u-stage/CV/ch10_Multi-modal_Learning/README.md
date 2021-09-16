@@ -131,3 +131,28 @@ face embedding -> STFT(spectogram) -> 얼굴과 스피치 데이터를 concat, c
 => L2 loss (clean spectogram과 enhanced spectrogram 의 차이) but 분리가 불가능 -> GT를 만들때에는 두 개의 video를 합성
 
 * synthesizing obama
+
+
+
+
+## Image captioning
+: CNN -> RNN
+![image](https://user-images.githubusercontent.com/51853700/133566659-365ea4be-7bd5-44d3-b9db-209cfa7dcd19.png)
+
+- CNN
+cnn 전체에서 끝 두개를 잘라서 사용한다(classification을 하는게 아니기 때문에)  
+ output 14 x 14로 나온다.
+ 
+ 
+- RNN
+: 중간중간 attention 정보도 함께 넣어준다.
+![image](https://user-images.githubusercontent.com/51853700/133567115-2c136a51-4aea-46e9-8603-33d38d9e0c1c.png)
+
+
+* Beam Search
+ex) k = 3
+each decode 단계에서 best score 3개씩을 계속 남김 (계속해서 단어를 붙여서 누적으로 평가)
+
+
+ 
+ 
