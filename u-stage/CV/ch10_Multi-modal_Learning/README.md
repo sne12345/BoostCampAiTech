@@ -149,9 +149,10 @@ cnn 전체에서 끝 두개를 잘라서 사용한다(classification을 하는�
 ![image](https://user-images.githubusercontent.com/51853700/133567115-2c136a51-4aea-46e9-8603-33d38d9e0c1c.png)
 
 
-* Beam Search
+* Beam Search  
 ex) k = 3
 each decode 단계에서 best score 3개씩을 계속 남김 (계속해서 단어를 붙여서 누적으로 평가)
+![image](https://user-images.githubusercontent.com/51853700/133568210-ada063f3-53bc-43b0-b4b4-afc7697a01e4.png)
 
 
  
