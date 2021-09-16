@@ -1,4 +1,4 @@
-## Overview of Multi-modal Learning
+## 1. Overview of Multi-modal Learning
 서로 다른 데이터 형태를 사용하는 학습법 
 ![image](https://user-images.githubusercontent.com/51853700/133548786-4c2d03e3-8f54-4090-af7d-fbae95f2ad08.png)
 
@@ -22,6 +22,29 @@
 
 
 
-## Multi-modal task (1) visual & text
+## 2. Multi-modal task (1) visual & text
 
-## Multi-modal task (2)
+안돼애애애애ㅠㅠㅠ
+
+
+
+2.3 cross modal translation
+
+![image](https://user-images.githubusercontent.com/51853700/133558625-c58ed378-ea2d-40ac-bcd2-e43c3744d84b.png)
+![image](https://user-images.githubusercontent.com/51853700/133558658-74b47dee-2c6f-42d5-8260-6f545fd718c5.png)
+generator network
+: 가우시안 랜덤 코드 => 항상 같은 output이 나오지 않게 해줌, conditional gan
+discriminal network
+: 이전의 sentence를 줘서 이 sentence하에 이미지가 맞는지 확인
+
+2.4 cross modal reasoning
+* visual question answering
+영상과 질문이 주어지면 답을 구하는 task
+
+image stream : CNN  -> fixed dimensional vector 출력
+question stream : RNN으로 encoding -> fixed dimensional vector 출력
+-> point-wise multiplication
+![image](https://user-images.githubusercontent.com/51853700/133558931-781731b7-918f-46fc-b073-a9e0d8d13b0e.png)
+
+
+## 3. Multi-modal task (2)
