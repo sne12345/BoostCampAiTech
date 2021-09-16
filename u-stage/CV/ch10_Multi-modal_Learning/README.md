@@ -92,4 +92,32 @@ sound 쪽만 학습되고, visual 쪽은 fix되어 있음
 : 미리 학습된 모델들을 잘 조합해서 사용 
 ![image](https://user-images.githubusercontent.com/51853700/133563558-d19d318c-a5fc-4f1a-b929-91783fcba3b1.png)
 
+speech feature -> face feature을 따라하도록 학습
+![image](https://user-images.githubusercontent.com/51853700/133563786-9c42d255-15e3-4ded-893e-640906a0d387.png)
 
+
+
+* image to speech ????
+: image captioning + speech synthesis(TTS)
+: sub word unit을 추출
+![image](https://user-images.githubusercontent.com/51853700/133564450-e29b4238-b937-4072-a327-2133d67e7435.png)
+
+
+
+
+3.4 cross modal reasoning
+* sound source localization
+: 영상과 소리를 주면 영상의 어디에서 소리가 나는지 찾는 task
+![image](https://user-images.githubusercontent.com/51853700/133564891-156a004a-a420-4da3-9c4e-78ea671f07dc.png)
+
+![image](https://user-images.githubusercontent.com/51853700/133565095-8daa9889-157f-499c-a53d-e05277594f85.png)
+
+* unsupervised
+localization score를 weight로 visual net에서 나온 feature와 weighted sum pooling => attended visual feature
+![image](https://user-images.githubusercontent.com/51853700/133565232-eaef2179-8a49-404e-ad6f-9a070ddc7578.png)
+![image](https://user-images.githubusercontent.com/51853700/133565392-1e0b41e4-a975-4375-b542-aabb1142066b.png)
+![image](https://user-images.githubusercontent.com/51853700/133565414-ac939796-d6ad-4240-af61-709056a101fd.png)
+
+
+
+![image](https://user-images.githubusercontent.com/51853700/133564450-e29b4238-b937-4072-a327-2133d67e7435.png)
