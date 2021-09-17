@@ -14,4 +14,4 @@
 
 * triangle mesh
 : vertex와 edge로 구성되어 있고, 모든 연결은 삼각형로 되어있음
-![image](https://user-images.githubusercontent.com/51853700/133721983-d385f677-43e5-43d1-8998-9e9e3b3cf506.png){: width="100" height="100"}
+![image](https://user-images.githubusercontent.com/51853700/133721983-d385f677-43e5-43d1-8998-9e9e3b3cf506.png)
