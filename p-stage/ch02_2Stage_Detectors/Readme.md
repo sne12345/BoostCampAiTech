@@ -71,4 +71,31 @@ But ! 무수히 많은 후보 영역이 있고, 객체를 포함할 가능성이
 - Positive samples 32, Negative samples 96
 
 
+
+
+# 3. SPPNet
+
+* 이미지를 고정된 사이즈로 변경하는 방법을
+* Convolution에 바로 넣고, spatial pyramid pooling을 하는 방식으로 변경(이미지를 고정된 사이즈로 변경)  
+
+### R-CNN의 2000개의 RoI를 각각 CNN에 통과 / 강제 wwarping의 성능 손실 가능성  
+-> 이러한 단점 해결
+* 위 : R-CNN  / 아래 : SPPNet  
+![image](https://user-images.githubusercontent.com/51853700/135070370-029dead7-c299-4eb6-a3d3-b6ec3b6a71bc.png)
+
+
+### Spatial Pyramid pooling  
+![image](https://user-images.githubusercontent.com/51853700/135070642-3633969d-5f1a-4210-a4bf-2a43e107c9ec.png)
+
+
+
+
+
+# 4. Fast R-CNN
+
+# 4.1 Pipeline
+### 1)
+### 2)
+
+
 출처 : 네이버 부스트캠프
