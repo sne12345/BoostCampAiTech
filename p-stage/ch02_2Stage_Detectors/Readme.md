@@ -1,3 +1,4 @@
+# 1. 세가지 detectors 개요
 ![image](https://user-images.githubusercontent.com/51853700/135059283-6690682b-9d69-4678-936f-ff5dcd40470a.png)
 
 
@@ -65,8 +66,9 @@ But ! 무수히 많은 후보 영역이 있고, 객체를 포함할 가능성이
 ### 1) AlexNet
 * Domain specific finetuning
 * Dataset 구성
-- *IoU > 0.5 : Positive image 
-- IoU < 0.5 : Negative image
+- *IoU > 0.5 : Positive samples 
+- *IoU < 0.5 : Negative samples
+- Positive samples 32, Negative samples 96
 
 
-
+출처 : 네이버 부스트캠프
