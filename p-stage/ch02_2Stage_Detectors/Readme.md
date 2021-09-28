@@ -93,9 +93,16 @@ But ! 무수히 많은 후보 영역이 있고, 객체를 포함할 가능성이
 
 # 4. Fast R-CNN
 
+### 1) RoI Projection
+### 2) RoI Pooling
+### 3) End-to-End 
+
 # 4.1 Pipeline
 ### 1)
 ### 2)
 
+# 5. Faster R-CNN
+
+### 1) RPN
 
 출처 : 네이버 부스트캠프
