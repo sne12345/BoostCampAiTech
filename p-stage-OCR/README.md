@@ -67,7 +67,7 @@ many-to-one match: 정답 박스 여러개와 예측박스 1개가 매칭되는 
 
 # 글자 검출 Text Detection
 
-### 소개
+## 소개
 
 1. 일반 객체 영역 검출과 글자 영역 검출의 차이
 - 예측하고자 하는 정보
@@ -87,7 +87,7 @@ many-to-one match: 정답 박스 여러개와 예측박스 1개가 매칭되는 
     - 짝수개의 점, 상하 점들이 쌍을 이루도록 배치
     
 
-### Taxonomy
+## Taxonomy
 
 1. Regression based vs Segmentation based
 - Regression based
