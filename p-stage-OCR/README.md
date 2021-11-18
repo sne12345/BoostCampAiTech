@@ -12,9 +12,7 @@
     - 이미지 내 단어 수의 평균이 17.5개, 최대 약 400개까지 있는 데이터로 다양하게 구성되어 있고, 가로쓰기 글자 외에도 세로쓰기, 진행방향이 불규칙한 글자, 휘어진 글자 등이 있습니다.
     - 언어는 주로 한국어이고, 영어, 그 외 다른 언어도 있습니다.
     - 한국어, 영어가 아닌 다른 언어는 don't care 처리하므로 검출하지 않아도 됩니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e029cda-7d18-40e7-8eb7-46640857af45/Untitled.png)
-
+    
 - 평가방법은 DetEval 방식
     
     **1) 모든 정답/예측박스들에 대해서 Area Recall, Area Precision을 미리 계산해냅니다.**
@@ -24,9 +22,7 @@
     Area Recall = 정답과 예측박스가 겹치는 영역 / 정답 박스의 영역
     
     Area Precision = 정답과 예측박스가 겹치는 영역 / 예측 박스의 영역
-    
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da7777e7-5834-4b23-bf57-221de60d3a32/Untitled.png)
+   
 
 **2) 모든 정답 박스와 예측 박스를 순회하면서, 매칭이 되었는지 판단하여 박스 레벨로 정답 여부를 측정합니다.**
 
@@ -34,7 +30,6 @@
 
 매칭이 되었는가 대한 조건은 크게 3가지 조건이 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b8d954fe-ce8a-4208-9723-c38f4605c08d/Untitled.png)
 
 one-to-one match: 정답 박스 1개와 예측 박스 1개가 매칭 && 기본조건 성립
 
@@ -44,7 +39,8 @@ many-to-one match: 정답 박스 여러개와 예측박스 1개가 매칭되는 
 
 # OCR 전체 과정
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0c42578b-d3d3-440d-991f-0c24da480848/Untitled.png)
+![image](https://user-images.githubusercontent.com/51853700/142345526-ef72eaf2-4c41-4f03-908b-739b5d7063b4.png)
+
 
 1. Text Detector
 - 다수 글자 검출
@@ -133,7 +129,6 @@ many-to-one match: 정답 박스 여러개와 예측박스 1개가 매칭되는 
 
 3) Idea
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03fe4075-0d50-40ca-8f20-ac675b056cd9/Untitled.png)
 
 네트워크가 2가지 정보를 pixel-wise로 출력
 
